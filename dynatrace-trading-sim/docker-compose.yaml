@@ -1,0 +1,8 @@
+services:
+  trading-sim:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - FAULT_RATE=0.3
+      - LATENCY_MS=150
